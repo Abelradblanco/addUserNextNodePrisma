@@ -76,8 +76,9 @@ Once Docker is running, you can access the PostgreSQL database with:
 
 ```bash
 docker exec -it db psql -U postgres
+```
 
-## Directory Structure
+#### Directory Structure
 /project-root
   ├── backend
   │   ├── prisma
