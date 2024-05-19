@@ -79,6 +79,7 @@ docker exec -it db psql -U postgres
 ```
 
 #### Directory Structure
+```bash
 /project-root
   ├── backend
   │   ├── prisma
@@ -92,3 +93,4 @@ docker exec -it db psql -U postgres
   │   └── ...
   ├── docker-compose.yml
   └── README.md
+```
