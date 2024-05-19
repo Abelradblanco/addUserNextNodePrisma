@@ -96,7 +96,9 @@ export default function Home() {
               type="email"
               placeholder="Email"
               value={newUser.email}
-              onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
+              onChange={(e) =>
+                setNewUser({ ...newUser, email: e.target.value })
+              }
               className="mt-1 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-200"
             />
           </div>
@@ -114,32 +116,44 @@ export default function Home() {
           className="bg-gray-800 p-6 rounded-lg shadow-md space-y-4"
         >
           <div className="flex flex-col">
-            <label className="text-sm font-semibold text-gray-400">User ID</label>
+            <label className="text-sm font-semibold text-gray-400">
+              User ID
+            </label>
             <input
               type="text"
               placeholder="User ID"
               value={updateUser.id}
-              onChange={(e) => setUpdateUser({ ...updateUser, id: e.target.value })}
+              onChange={(e) =>
+                setUpdateUser({ ...updateUser, id: e.target.value })
+              }
               className="mt-1 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-200"
             />
           </div>
           <div className="flex flex-col">
-            <label className="text-sm font-semibold text-gray-400">New Name</label>
+            <label className="text-sm font-semibold text-gray-400">
+              New Name
+            </label>
             <input
               type="text"
               placeholder="New Name"
               value={updateUser.name}
-              onChange={(e) => setUpdateUser({ ...updateUser, name: e.target.value })}
+              onChange={(e) =>
+                setUpdateUser({ ...updateUser, name: e.target.value })
+              }
               className="mt-1 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-200"
             />
           </div>
           <div className="flex flex-col">
-            <label className="text-sm font-semibold text-gray-400">New Email</label>
+            <label className="text-sm font-semibold text-gray-400">
+              New Email
+            </label>
             <input
               type="email"
               placeholder="New Email"
               value={updateUser.email}
-              onChange={(e) => setUpdateUser({ ...updateUser, email: e.target.value })}
+              onChange={(e) =>
+                setUpdateUser({ ...updateUser, email: e.target.value })
+              }
               className="mt-1 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-200"
             />
           </div>
