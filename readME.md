@@ -83,7 +83,7 @@ docker exec -it db psql -U postgres
 /project-root
   ├── backend
   │   ├── prisma
-  │   ├── src
+  │   ├── routes
   │   ├── package.json
   │   └── ...
   ├── frontend
