@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CardComponent from '../components/CardComponent';
+import NavBar from "../components/navbar/Navbar";
+import Hero from "../components/Hero"
 
 interface User {
   id: number;
@@ -69,8 +71,11 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-900 text-gray-200">
-      <div className="space-y-4 w-full max-w-2xl">
+
+    <main className="flex flex-col items-center justify-center p-4 bg-gray-900 text-gray-200">
+        <NavBar/>
+        <Hero/>
+      <div className="space-y-4 w-full max-w-5xl">
         <h1 className="text-3xl font-bold text-gray-100 text-center">
           User Management App
         </h1>
